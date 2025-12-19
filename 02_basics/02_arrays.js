@@ -1,7 +1,7 @@
 const marvel_heros = ["thor", "Ironman", "spiderman"]
 const dc_heros = ["superman", "flash", "batman"]
 
-marvel_heros.push(dc_heros)
+// marvel_heros.push(dc_heros)
 
 // console.log(marvel_heros);
 // console.log(marvel_heros[3][1]);
@@ -21,9 +21,9 @@ const another_array = [1, 2, 3, [4, 5, 6], 7, [6, 7, [4, 5]]]
 
 
 
-console.log(Array.isArray("Hitesh"))    // checks if it is array or not returns true or false
-console.log(Array.from("Hitesh"))       // converts them into an array
-console.log(Array.from({name: "hitesh"})) // interesting // returns an empty array we have to tell which one to convert into array
+// console.log(Array.isArray("Hitesh"))    // checks if it is array or not returns true or false
+// console.log(Array.from("Hitesh"))       // converts them into an array
+// console.log(Array.from({name: "hitesh"})) // interesting // returns an empty array we have to tell which one to convert into array
 
 // let score1 = 100
 // let score2 = 200
