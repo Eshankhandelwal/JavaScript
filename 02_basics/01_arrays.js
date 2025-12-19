@@ -18,22 +18,23 @@ const myArr2 = new Array(1, 2, 3, 4)
 // console.log(myArr.includes(9));  // it checks if 9 is present or not and returns in true or false
 // console.log(myArr.indexOf(3));   // this tells the index of the element in the array if not then it gives -1
 
-// const newArr = myArr.join()      // converts the array into string
+const newArr = myArr.join()      // converts the array into string
 
-// console.log(myArr);      [1,2,3,4,5]
-// console.log( newArr);    1,2,3,4,5
+// console.log(myArr);    //  [0,1,2,3,4,5]
+// console.log( newArr);   // 0,1,2,3,4,5
 
 
 // slice, splice
 
-console.log("A ", myArr);
+// console.log("A ", myArr);
 
 const myn1 = myArr.slice(1, 3)    // slice does not change the original array but takes a copy and the last one is not included
 
 // console.log(myn1);
+
 // console.log("B ", myArr);
 
+const myn2 = myArr.splice(1, 3)   // splice changes the original array takes a part of the array from 1 to 3
 
-const myn2 = myArr.splice(1, 3)   // splice changes the original array takes a part of the arrayfrom 1 to 3
 // console.log("C ", myArr);
-// console.log(myn2);
+// console.log(myn2); 
