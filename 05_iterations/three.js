@@ -18,25 +18,37 @@
 
 // Maps
 
-// const map = new Map()
-// map.set('IN', "India")
-// map.set('USA', "United States of America")
-// map.set('Fr', "France")
-// map.set('IN', "India")
-// map.set('UK', "United Kingdom")
+const map = new Map()       // Only distinct values and no duplicates
+map.set('IN' , "India") 
+map.set('USA' , "United States Of America")
+map.set('FR' , "France")
+map.set('RU' , "Russia")
 
-// console.log(map);
+console.log(map);
 
-// for (const [key, value] of map) {
-//     console.log(key, ':-', value);
+// for(const key of map){
+//     console.log(key);       // it return arrays
 // }
 
+// for(const value of map){
+//     console.log(value);       //  it return arrays
+// }
 
-const myObject = {
-    game1: 'NFS',
-    game2: 'Spiderman'
+for(const [key , value] of map){        
+    console.log(key, "->" ,value);    // the output of it is string
 }
 
-// for (const [key, value] of myObject) {
-//     console.log(key, ':-', value);
-// }
+const myObjects = {     
+    game1: "NFS",
+    game2: "Spiderman",
+    game3: "GTA 6",
+    game4: "Counter Strike",
+    game5: "Tekken 7"
+}
+
+// This will not work because (for of) loop works with iterables like (arrays , strings , map) 
+// But normal javascript Object is not iterable
+
+for(const [key , value] of myObjects){    
+    console.log(key, "->" ,value);
+}
