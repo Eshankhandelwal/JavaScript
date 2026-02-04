@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur code</h1>
+    <button id="Stop">Stop</button>
+</body>
+<script>
+
+    // setTimeout(function(){
+    //     console.log("Eshan");
+    // } , 2000);
+
+    // const sayEshan = function(){
+    //     console.log("Eshan");
+    // }
+    // setTimeout(sayEshan , 2000);
+
+    const changeText = function(){
+        document.querySelector('h1').innerHTML = "JavaScript";
+    }
+    // setTimeout(changeText , 2000);
+
+    const changeMe = setTimeout(changeText , 2000);
+
+    document.querySelector('#Stop').addEventListener('click' , function(e){
+        clearTimeout(changeMe);
+        console.log("STOPPED");
+    });
+
+
+</script>
+</html>
